@@ -1,0 +1,45 @@
+Automation Frameworks[4]:
+
+1. Modular:
+		Identify the reusable steps in different testcases and convert them into a method
+2. Data Driven
+		Maintenance of Input data in different formats such as 
+			testng.xml,xls,xlsx,database
+3. Keyword:
+		Associate the reusable methods with the keywords and invoke the keywords to execute the steps
+
+4. Hybrid****: 3 classes +Modular + DataDriven
+
+		AppLibrary.java
+		Helperclass.java
+		BaseClass.java
+
+What is the automation framework used in the Project?
+
+We are using the Hybrid Framewokr in our project where it includes Modular + Data Driven
+In Modular we identify   the reusable steps in different testcases and convert them into a method
+		login()
+In Data Driven we maintain the Input data in different formats such as 
+			testng.xml,xls,xlsx
+And also we maintain the methods in different classes such as 
+		AppLibrary.java -> Reusable java methods
+		Helperclass.java->Reusable selenium methods useful for different modules - patient & admin
+					Example: login,naviagtion methods
+		BaseClass.java
+					This class is a parent class has been extended by every test class
+					Objective of the class to instantiate the driver and driver variable is protected.
+
+
+Design Pattern : Page Object Model:
+-------------------------------------------------
+to associate the methods into different pageobject classes.
+for easy maintenance
+to reduce duplication of the code
+https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/
+
+
+
+
+
+
+
